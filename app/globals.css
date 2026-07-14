@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette — extracted from the live site's generated Elementor CSS
+     (real per-widget button/heading colors), not the unused Elementor theme
+     defaults. The source site's literal accent was #FF6700, but that fails
+     WCAG AA as text/button color against white (2.92:1) — darkened to the
+     nearest shade that clears 4.5:1 in both directions (still reads as the
+     same orange) per the brief's accessibility requirement. */
+  --color-primary: #c9500a;
+  --color-primary-hover: #a84200;
+  --color-navy: #1c2544;
+  --color-navy-elevated: #24304f;
+  --color-heading: #1a1a1a;
+  --color-body: #6b6b6b;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f7f8;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --background: var(--color-surface);
+  --foreground: var(--color-body);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-navy: var(--color-navy);
+  --color-navy-elevated: var(--color-navy-elevated);
+  --color-heading: var(--color-heading);
+  --color-body: var(--color-body);
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-roboto-slab);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Layered so Tailwind utility classes (text-white, etc.) can override this
+   default — an unlayered rule here would always win over @layer utilities
+   regardless of specificity, silently defeating text-white on headings. */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+    font-family: var(--font-display);
+  }
+}
+
+/* Visible focus states for keyboard navigation (accessibility baseline) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
