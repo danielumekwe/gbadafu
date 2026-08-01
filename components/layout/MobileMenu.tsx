@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Phone } from "lucide-react";
+import { WhatsappIcon } from "@/components/ui/SocialIcons";
 import { NAV_ITEMS, SITE } from "@/lib/constants";
 
 export function MobileMenu({ onNavigate }: { onNavigate: () => void }) {
@@ -72,6 +73,15 @@ export function MobileMenu({ onNavigate }: { onNavigate: () => void }) {
       >
         <Phone className="size-4" aria-hidden="true" />
         {SITE.phone}
+      </a>
+      <a
+        href={`https://wa.me/${SITE.whatsappHref}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-2 bg-navy px-6 py-4 text-sm font-semibold text-white"
+      >
+        <WhatsappIcon className="size-4" aria-hidden="true" />
+        {SITE.whatsapp} (WhatsApp only)
       </a>
     </div>
   );

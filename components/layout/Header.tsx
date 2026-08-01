@@ -10,6 +10,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { DesktopNav } from "@/components/layout/DesktopNav";
 import { MobileMenu } from "@/components/layout/MobileMenu";
+import { WhatsappIcon } from "@/components/ui/SocialIcons";
 import { SITE } from "@/lib/constants";
 
 const FOCUSABLE_SELECTOR =
@@ -90,6 +91,15 @@ export function Header() {
           <a href={`tel:${SITE.phoneHref}`} className="flex items-center gap-1.5 hover:text-primary">
             <Phone className="size-3.5" aria-hidden="true" />
             {SITE.phone}
+          </a>
+          <a
+            href={`https://wa.me/${SITE.whatsappHref}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-primary"
+          >
+            <WhatsappIcon className="size-3.5" aria-hidden="true" />
+            {SITE.whatsapp} (WhatsApp only)
           </a>
         </Container>
       </div>
