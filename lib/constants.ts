@@ -6,6 +6,8 @@ export const SITE = {
   email: "info@gbadafu.com",
   phone: "+234 803 323 6249",
   phoneHref: "+2348033236249",
+  whatsapp: "+234 705 143 5281",
+  whatsappHref: "2347051435281",
   address: "26, ID Gyang Street, Rayfield, Jos, Plateau State",
 };
 

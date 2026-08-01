@@ -8,6 +8,19 @@ export type TeamMember = {
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
+    slug: "moses-kolo-tsado",
+    name: "Moses Kolo Tsado",
+    title: "Founder and Chairman",
+    image: "/images/team/tsado.jpeg",
+    bio: [
+      "As Founder and Chairman of Gbadafu International Limited, Engr. Moses Kolo Tsado provides strategic direction and governance, leveraging his extensive industry experience to drive organizational growth and development. His leadership is defined by fostering strategic partnerships, ensuring value addition, and supporting economic diversification.",
+      "Moses Kolo Tsado is an award-winning engineering and business executive with more than thirty years of distinguished service at the intersection of engineering and commercial decision-making in Nigeria's oil and gas sector, both locally and internationally. He has built a career that spans engineering, project management, supply chain, procurement, contract administration, and commercial leadership within the Nigerian economy particularly in the oil and gas sector. A COREN-registered Mechanical Engineer with an MBA in Management, he has contributed significantly across the full arc of the industry, from the design of gas processing facilities to the governance of contracts that enable sustainable mega projects.",
+      "Beyond his technical and executive accomplishments, Engr. Tsado has cultivated an extensive professional network across the energy, engineering, finance, and business communities. His entrepreneurial interests extend beyond oil and gas into real estate, telecommunications, mining, and mechanized agriculture, reflecting his passion for building sustainable enterprises that contribute to economic development and national growth.",
+      "His professional affiliations include registration with the Council for the Regulation of Engineering in Nigeria (COREN) and membership in both the Nigerian Society of Engineers (NSE) and the American Society of Mechanical Engineers (ASME). He possesses a reputation for excellence, integrity, and innovation. Engr. Tsado is dedicated to sustainable business practices that create lasting impact.",
+      "Outside his professional commitments, he enjoys travelling, swimming, and playing table tennis.",
+    ],
+  },
+  {
     slug: "john-babatanko-yeldin",
     name: "John Babatanko Yeldin",
     title: "Chief Executive Officer/ Managing Director",
@@ -39,16 +52,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "As a legal officer and adviser, he advocates for ADR due to its cost-effectiveness and time efficiency. He has participated in several high-profile negotiations and out-of-court settlements, utilising his expertise to resolve disputes swiftly and effectively.",
       "Makplang is a member of the Nigerian Institute of Management (Chartered) and holds both a Bachelor's degree and a Master's degree in Law from the University of Jos, Nigeria. He is passionate about teaching, ADR, leadership, advocacy, volunteerism, humanitarian services, and youth and community development. In his spare time, he enjoys teaching, volunteering, and watching or playing football.",
       "Overall, Makplang's extensive experience and expertise in law, corporate governance, and community development make him a valuable asset to his clients and the organisations he serves.",
-    ],
-  },
-  {
-    slug: "mohammed-abubakar",
-    name: "Mohammed Abubakar",
-    title: "Manager, Human Resources",
-    image: "/images/team/abubakar.jpeg",
-    bio: [
-      "Mohammed Abubakar (born 1st January 1990 in Bida, Niger State, Nigeria) is an accountant by training with qualifications in accountancy from The Federal Polytechnic Bida (HND, 2014) and Niger State Polytechnic, Zungeru, Bida Campus (ND, 2007). He also holds a Senior Secondary School Certificate (NABTEB, 2018) and a First School Leaving Certificate (1998).",
-      "Fluent in English, Hausa, and Nupe, he is skilled in accountancy and has a strong academic background. His interests include meeting people, reading, travelling, and researching.",
     ],
   },
 ];

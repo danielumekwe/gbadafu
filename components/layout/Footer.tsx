@@ -7,6 +7,7 @@ import {
   InstagramIcon,
   LinkedinIcon,
   TwitterIcon,
+  WhatsappIcon,
 } from "@/components/ui/SocialIcons";
 import {
   ABOUT_BLURB,
@@ -92,6 +93,17 @@ export function Footer() {
               <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
               <a href={`tel:${SITE.phoneHref}`} className="hover:text-primary">
                 {SITE.phone}
+              </a>
+            </li>
+            <li className="flex items-start gap-3">
+              <WhatsappIcon className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              <a
+                href={`https://wa.me/${SITE.whatsappHref}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                {SITE.whatsapp} (WhatsApp)
               </a>
             </li>
             <li className="flex items-start gap-3">

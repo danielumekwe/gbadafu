@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { WhatsappIcon } from "@/components/ui/SocialIcons";
 import { SITE } from "@/lib/constants";
 import { pageMetadata } from "@/lib/seo";
 
@@ -48,6 +49,22 @@ export default function ContactPage() {
                   <p className="text-sm font-semibold text-heading">Office Phone</p>
                   <a href={`tel:${SITE.phoneHref}`} className="text-body hover:text-primary">
                     {SITE.phone}
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <WhatsappIcon className="size-5" aria-hidden="true" />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-heading">WhatsApp (Message Only)</p>
+                  <a
+                    href={`https://wa.me/${SITE.whatsappHref}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body hover:text-primary"
+                  >
+                    {SITE.whatsapp}
                   </a>
                 </div>
               </li>
